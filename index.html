@@ -3,12 +3,70 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta charset=UTF-8>
     <title>Casa Criativa</title>
+
+    <style>
+
+        body {
+            background: #E5E5E5;
+            color: #25252B;
+
+            text-align: center;
+        }
+
+        button {
+            color: #FF5E84;
+            border: none;
+            font-weight: bold;
+            background: none;
+            
+        }
+
+        .fat {
+            color:#FFFFFF ;
+            background: #FF5E84;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Casa Criativa</h1>
+    <img src="logo.png" alr="Imagem da Logomarca">
+    <p>
+        Ficar em casa em períodos longos no deve ser nada facil.
+    </p>
+
+    <p>
+        Por isso, iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, 
+        livros, cursos, dicas</strong> e tudo o que for necessário para tornar 
+        esse momento mais interessante.
+    </p>
+
+    <p>
+        Comece clicando em ver ideias para ver as 
+        ideias cadastradas e contribua adcionando a sia ideia
+    </p>
+
+    <button>+ Adcionar Ideia</button>
+    <button class="fat"> Ver ideias</button>
+
+    <p id="footer">💻 Desenvolvido pela equipe IronDev 💻</p>
+
+    <script>
+        document
+            .querySelector("button.fat")
+            .addEventListener("click", function(){
+                document
+                    .querySelector("#footer")
+                    .classList
+                    .toggle("hide")
+            })
+    </script>
+
 </body>
 
 </html>

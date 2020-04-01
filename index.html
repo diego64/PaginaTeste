@@ -6,67 +6,109 @@
     <meta charset=UTF-8>
     <title>Casa Criativa</title>
 
-    <style>
-
-        body {
-            background: #E5E5E5;
-            color: #25252B;
-
-            text-align: center;
-        }
-
-        button {
-            color: #FF5E84;
-            border: none;
-            font-weight: bold;
-            background: none;
-            
-        }
-
-        .fat {
-            color:#FFFFFF ;
-            background: #FF5E84;
-        }
-
-        .hide {
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
-    <img src="logo.png" alr="Imagem da Logomarca">
-    <p>
-        Ficar em casa em períodos longos no deve ser nada facil.
-    </p>
 
-    <p>
-        Por isso, iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, 
-        livros, cursos, dicas</strong> e tudo o que for necessário para tornar 
-        esse momento mais interessante.
-    </p>
+    <div id="container">
 
-    <p>
-        Comece clicando em ver ideias para ver as 
-        ideias cadastradas e contribua adcionando a sia ideia
-    </p>
+        <section id="intro">
 
-    <button>+ Adcionar Ideia</button>
-    <button class="fat"> Ver ideias</button>
+            <header>
+                <img src="logo.png" alr="Imagem da Logomarca">
+            </header>
 
-    <p id="footer">💻 Desenvolvido pela equipe IronDev 💻</p>
+        <main>
 
-    <script>
-        document
-            .querySelector("button.fat")
-            .addEventListener("click", function(){
-                document
-                    .querySelector("#footer")
-                    .classList
-                    .toggle("hide")
-            })
-    </script>
+            <p>
+                Ficar em casa em períodos longos no deve ser nada facil.
+            </p>
+        
+            <p>
+                Por isso, iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, 
+                livros, cursos, dicas</strong> e tudo o que for necessário para tornar 
+                esse momento mais interessante.
+            </p>
+        
+            <p>
+                Comece clicando em ver ideias para ver as 
+                ideias cadastradas e contribua adcionando a sia ideia
+            </p>
 
+        </main>
+
+        <section id="buttons">
+
+            <button>+ Adcionar Ideia</button>
+            <button class="fat"> Ver ideias</button>
+
+        </section>
+
+        <footer>
+            💻 Desenvolvido pela equipe IronDev 💻
+        </footer>
+
+        </section>
+
+    <section id="last-ideias">
+        <div class="idea">
+            <img 
+            src="https://image.flaticon.com/icons/svg/2729/2729007.svg" 
+             alt="Imagem do Curso de Programação">
+
+        <div class="content">
+            <h3>Cursos de Programação</h3>
+            <p>Estudo</p>
+            <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, corporis quasi expedita error magnam commodi voluptatibus dignissimos sed eos rem libero. Sequi non ratione temporibus. Nemo incidunt blanditiis dolor ipsum.
+            </div>
+            <a href="#">Ir para a Ideia</a>
+           </div>
+        </div>
+
+        <div class="idea">
+            <img 
+            src="https://image.flaticon.com/icons/svg/2729/2729005.svg" 
+             alt="Imagem de Exercicio">
+
+        <div class="content">
+            <h3>Exercicios</h3>
+            <p>Saúde</p>
+            <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, corporis quasi expedita error magnam commodi voluptatibus dignissimos sed eos rem libero. Sequi non ratione temporibus. Nemo incidunt blanditiis dolor ipsum.
+            </div>
+            <a href="#">Ir para a Ideia</a>
+           </div>
+        </div>
+
+        <div class="idea">
+            <img 
+            src="https://image.flaticon.com/icons/svg/2729/2729027.svg" 
+             alt="Imagem do Meditacao">
+
+        <div class="content">
+            <h3>Meditação</h3>
+            <p>Mentalidade</p>
+            <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, corporis quasi expedita error magnam commodi voluptatibus dignissimos sed eos rem libero. Sequi non ratione temporibus. Nemo incidunt blanditiis dolor ipsum.
+            </div>
+            <a href="#">Ir para a Ideia</a>
+           </div>
+        </div>
+
+        
+          
+    </section>
+    
+    </div>
+
+
+
+    
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>

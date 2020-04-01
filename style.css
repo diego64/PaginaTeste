@@ -1,0 +1,58 @@
+body {
+    background: #E5E5E5;
+    color: #25252B;
+
+    margin: 0;
+}
+
+#container {
+    width: 80%;
+    max-width: 980px;
+
+    margin: 40px auto;
+
+    display: flex;
+}
+
+#intro {
+    width: 300px;
+    margin-right: 20px;
+}
+
+main {
+    margin-top: 32px 0;
+}
+
+#buttons {
+    display: flex;
+    text-align: center ;
+    justify-content: space-evenly;
+}
+
+button {
+    color: #FF5E84;
+    border: none;
+
+    font-weight: bold;
+
+    background: none;
+    
+
+}
+
+button.fat {
+    color:#FFFFFF ; 
+    background: #FF5E84;
+}
+
+footer {
+    margin-bottom: 32px;
+}
+
+footer a {
+
+}
+
+.hide {
+    display: none;
+}

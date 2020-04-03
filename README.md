@@ -1,8 +1,6 @@
 <h4 align="center">
   🔧 Em desenvolvimento 🔨
-
-  <p align="center">
-
+  
   - Parte 1 ✅
   - Parte 2 ✅
   - Parte 3 ⌚

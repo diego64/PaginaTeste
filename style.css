@@ -7,9 +7,7 @@ body {
     margin: 0;
 }
 
-.hide {
-    display: none;
-}
+
 
 a { 
     color: #FF5E84;
@@ -17,12 +15,16 @@ a {
     text-decoration: none;
 }
 
+p, .description {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
 #container {
     width: 80%;
     max-width: 980px;
-
     margin: 40px auto;
-
     display: flex;
 }
 
@@ -48,7 +50,9 @@ button {
     background: none;
     cursor: pointer;
     outline: none;
+    font-weight: 14px;
     font-weight: bold;
+    letter-spacing: 0.2px;
 }
 
 button:hover {
@@ -72,8 +76,17 @@ button.fat:hover {
 }
 
 footer {
+  /*text-align: center; */
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
     margin-bottom: 32px;
     margin-top: 30px;
+    color: #777;
+}
+
+footer a {
+    opacity: 0.7;
 }
 
 footer a:hover {
@@ -110,4 +123,130 @@ footer a:hover {
 
 .idea .description {
     margin: 16px 0;
+}
+
+/* Modal */
+
+#modal {
+    background: #ff5e84;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+   
+
+    display: flex;
+    justify-content: center;
+
+    transition: 400ms;
+}
+
+#modal.addScroll {
+    overflow: auto;
+} 
+
+#modal .content {
+    margin-top: 5%;
+
+    color: #fff;
+}
+
+#modal .content h1 {
+    text-align: center;
+
+    text-transform: uppercase;
+}
+
+#modal form {
+    width: 80%;
+    max-width: 800px;
+
+    margin: 0 auto 15%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5) {
+    grid-column: span 2;
+}
+
+form input,
+form textarea {
+    width: 100%;
+
+    padding: 12px;
+    box-sizing: border-box;
+
+    border-radius: 6px;
+    border: 1px solid rgba(141, 25, 52, 0.5);
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+form label {
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 1.5px;
+}
+
+form a {
+
+    width: 150px;
+    height: 40px;
+
+    border-radius: 6px;
+
+    background-color: #FFFFFF22;
+    color: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    align-self: end;
+
+    transition: 400ms;
+}
+
+form a:hover {
+    background-color: #fff;
+    color: #ff5e84;
+}
+
+form button {
+    background: #fff;
+
+    width: 150px;
+    height: 40px;
+
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 32px;
+    grid-column: 2;
+    justify-self: end;
+    transition: 400ms;
+}
+
+form button:hover {
+    background-color: #0984e3;
+    color: #fff;
+
+    text-decoration: none;
+}
+
+#modal.hide {
+    opacity: 0;
+    visibility: hidden;
 }
